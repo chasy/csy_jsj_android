@@ -1,4 +1,7 @@
+
+*.bin
 *.iml
+*.gradle
 .gradle
 /local.properties
 /.idea/workspace.xml
@@ -36,6 +39,3 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
-*.bin
-*.iml
-*.gradle
