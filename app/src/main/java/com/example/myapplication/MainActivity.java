@@ -7,9 +7,9 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //추가
+    //링크 이벤트
     public void onButtonClick(View v){
         //Toast.makeText(this,"Click Button", Toast.LENGTH_LONG);
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"));
@@ -39,10 +39,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //알림 이벤트
     public void btnAlert(View v){
         Toast.makeText(getApplicationContext(), "버튼이 눌렸습니다.", Toast.LENGTH_LONG).show();
     }
 
+    //전화걸기 이벤트
     public void btnCallCellphone(View v){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(("tel:010-2222-3333")));
         startActivity(intent);
