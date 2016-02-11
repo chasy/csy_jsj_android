@@ -13,55 +13,55 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="정세종 븅신"
-        android:id="@+id/textView2" />
+        android:text="정세종 븅신" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="이런거다 세종아 ㅋㅋㅋㅋ!!!"
-        android:id="@+id/textView"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp" />
+        android:layout_marginTop="48dp"
+        android:text="내용변경"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
+        android:id="@+id/btnTest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="테스트버튼"
-        android:id="@+id/btnTest"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
+        android:layout_alignStart="@+id/textView"
         android:layout_marginBottom="143dp"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:onClick="onButtonClick" />
+        android:onClick="onButtonClick"
+        android:text="테스트버튼" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="버튼 클릭알림"
         android:id="@+id/button"
-        android:layout_alignRight="@+id/btnTest"
-        android:layout_alignEnd="@+id/btnTest"
-        android:layout_above="@+id/btnTest"
-        android:layout_alignLeft="@+id/btnTest"
-        android:layout_alignStart="@+id/btnTest"
-        android:onClick="btnAlert" />
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="전화걸기"
+        android:layout_above="@+id/btnTest"
+        android:layout_alignEnd="@+id/btnTest"
+        android:layout_alignLeft="@+id/btnTest"
+        android:layout_alignRight="@+id/btnTest"
+        android:layout_alignStart="@+id/btnTest"
+        android:onClick="btnAlert"
+        android:text="버튼 클릭알림" />
+
+    <Button
         android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/button"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignRight="@+id/button"
         android:layout_alignEnd="@+id/button"
-        android:onClick="btnCallCellphone" />
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignStart="@+id/textView"
+        android:onClick="btnCallCellphone"
+        android:text="전화걸기" />
 </RelativeLayout>
