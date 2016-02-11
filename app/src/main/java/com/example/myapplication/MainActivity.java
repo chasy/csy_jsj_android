@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //추가
+    //버튼 클릭 링크
     public void onButtonClick(View v){
         //Toast.makeText(this,"Click Button", Toast.LENGTH_LONG);
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"));
@@ -39,10 +39,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //버튼 클릭 알림
     public void btnAlert(View v){
         Toast.makeText(getApplicationContext(), "버튼이 눌렸습니다.", Toast.LENGTH_LONG).show();
     }
 
+    //버튼 클릭 전화걸기
     public void btnCallCellphone(View v){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(("tel:010-2222-3333")));
         startActivity(intent);
