@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnAlert(View v){
         Toast.makeText(getApplicationContext(), "버튼이 눌렸습니다.", Toast.LENGTH_LONG).show();
-
     }
 
     public void btnCallCellphone(View v){
